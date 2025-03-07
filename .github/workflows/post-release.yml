@@ -14,8 +14,8 @@ jobs:
 
             The release is available on:
 
-            * [GitHub releases](https://github.com/JoshuaKGoldberg/cta-example-everything/releases/tag/{release_tag})
-            * [npm package (@latest dist-tag)](https://www.npmjs.com/package/cta-example-everything/v/${{ env.npm_version }})
+            * [GitHub releases](https://github.com/bingo-examples/created-typescript-app-everything/releases/tag/{release_tag})
+            * [npm package (@latest dist-tag)](https://www.npmjs.com/package/created-typescript-app-everything/v/${{ env.npm_version }})
 
             Cheers! 📦🚀
 

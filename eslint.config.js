@@ -50,7 +50,10 @@ export default tseslint.config(
 			"object-shorthand": "error",
 			"operator-assignment": "error",
 		},
-		settings: { perfectionist: { partitionByComment: true, type: "natural" } },
+		settings: {
+			perfectionist: { partitionByComment: true, type: "natural" },
+			vitest: { typecheck: true },
+		},
 	},
 	{
 		extends: [tseslint.configs.disableTypeChecked],
@@ -58,7 +61,7 @@ export default tseslint.config(
 		rules: {
 			"n/no-missing-import": [
 				"error",
-				{ allowModules: ["cta-example-everything"] },
+				{ allowModules: ["created-typescript-app-everything"] },
 			],
 		},
 	},
