@@ -5,7 +5,7 @@ import jsdoc from "eslint-plugin-jsdoc";
 import jsonc from "eslint-plugin-jsonc";
 import markdown from "eslint-plugin-markdown";
 import n from "eslint-plugin-n";
-import packageJson from "eslint-plugin-package-json/configs/recommended";
+import packageJson from "eslint-plugin-package-json";
 import perfectionist from "eslint-plugin-perfectionist";
 import * as regexp from "eslint-plugin-regexp";
 import yml from "eslint-plugin-yml";
@@ -24,7 +24,7 @@ export default tseslint.config(
 	jsonc.configs["flat/recommended-with-json"],
 	markdown.configs.recommended,
 	n.configs["flat/recommended"],
-	packageJson,
+	packageJson.configs.recommended,
 	perfectionist.configs["recommended-natural"],
 	regexp.configs["flat/recommended"],
 	{
@@ -32,7 +32,7 @@ export default tseslint.config(
 			tseslint.configs.strictTypeChecked,
 			tseslint.configs.stylisticTypeChecked,
 		],
-		files: ["**/*.js", "**/*.ts"],
+		files: ["**/*.{js,ts}"],
 		languageOptions: {
 			parserOptions: {
 				projectService: { allowDefaultProject: ["*.config.*s"] },
@@ -58,12 +58,7 @@ export default tseslint.config(
 	{
 		extends: [tseslint.configs.disableTypeChecked],
 		files: ["**/*.md/*.ts"],
-		rules: {
-			"n/no-missing-import": [
-				"error",
-				{ allowModules: ["created-typescript-app-everything"] },
-			],
-		},
+		rules: { "n/no-missing-import": "off" },
 	},
 	{
 		extends: [vitest.configs.recommended],
@@ -71,7 +66,7 @@ export default tseslint.config(
 		rules: { "@typescript-eslint/no-unsafe-assignment": "off" },
 	},
 	{
-		extends: [yml.configs["flat/recommended"], yml.configs["flat/prettier"]],
+		extends: [yml.configs["flat/standard"], yml.configs["flat/prettier"]],
 		files: ["**/*.{yml,yaml}"],
 		rules: {
 			"yml/file-extension": ["error", { extension: "yml" }],
