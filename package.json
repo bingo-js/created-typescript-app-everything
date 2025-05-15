@@ -4,7 +4,7 @@
 	"description": "An example of create-typescript-app's Everything preset. 💯",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bingo-examples/created-typescript-app-everything.git"
+		"url": "git+https://github.com/bingo-js/created-typescript-app-everything.git"
 	},
 	"license": "MIT",
 	"author": {
@@ -35,7 +35,7 @@
 		"*": "prettier --ignore-unknown --write"
 	},
 	"devDependencies": {
-		"@eslint-community/eslint-plugin-eslint-comments": "4.4.1",
+		"@eslint-community/eslint-plugin-eslint-comments": "4.5.0",
 		"@eslint/js": "9.26.0",
 		"@release-it/conventional-changelog": "10.0.0",
 		"@types/eslint-plugin-markdown": "2.0.2",
