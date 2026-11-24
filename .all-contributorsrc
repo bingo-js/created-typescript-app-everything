@@ -42,6 +42,5 @@
   ],
   "projectName": "created-typescript-app-everything",
   "projectOwner": "bingo-js",
-  "repoType": "github",
-  "commitConvention": "angular"
+  "repoType": "github"
 }

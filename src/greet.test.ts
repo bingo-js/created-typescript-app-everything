@@ -1,10 +1,10 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { greet } from "./greet.js";
+import { greet } from "./greet.ts";
 
 const message = "Yay, testing!";
 
-describe("greet", () => {
+describe(greet, () => {
 	it("logs to the console once when message is provided as a string", () => {
 		const logger = vi.spyOn(console, "log").mockImplementation(() => undefined);
 
