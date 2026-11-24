@@ -19,9 +19,9 @@
       ]
     },
     {
-      "login": "bingo-examples",
+      "login": "bingo-js",
       "name": "Bingo 💝",
-      "avatar_url": "https://avatars.githubusercontent.com/u/202026437?v=4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/208052484?v=4",
       "profile": "https://create.bingo/",
       "contributions": [
         "code",
@@ -41,7 +41,6 @@
     "README.md"
   ],
   "projectName": "created-typescript-app-everything",
-  "projectOwner": "bingo-examples",
-  "repoType": "github",
-  "commitConvention": "angular"
+  "projectOwner": "bingo-js",
+  "repoType": "github"
 }
